@@ -1,0 +1,405 @@
+/* Start Global Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inconsolata", sans-serif;
+  background-color: #f7f5f2;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+}
+
+.special-p {
+  color: white;
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+.special-p span {
+  background-color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+
+/* End Global Rules */
+
+/* Start Header */
+
+/* .header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 20px;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: white;
+} */
+
+.header .fixed-list {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  padding: 8px 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header .fixed-list .items {
+  padding: 10px;
+  width: 25%;
+  text-align: center;
+  transition: .3s;
+  cursor: pointer;
+
+}
+
+.header .fixed-list a {
+  text-decoration: none;
+  color: white;
+  transition: .3s;
+}
+
+.header .fixed-list .items:hover {
+  background-color: #d3d3d3;
+}
+
+.header .fixed-list .items:hover a {
+  color: black;
+}
+
+
+
+.header .cafe-information {
+  background-image: url(../Cafe/images/cafe-header-3.jpg);
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.header .cafe-information h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.cafe-information h1 span {
+  display: block;
+  padding: 15px;
+  font-size: 100px;
+}
+
+.cafe-information .time {
+  background-color: black;
+  color: white;
+  padding: 3px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.cafe-information .address {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+}
+
+/* End Header */
+
+/* Start About */
+.about {
+  padding-top: 60px;
+}
+
+.about-content .one,
+.two {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-content .about-quote {
+  background-color: #f1f1f1;
+  border-left: 6px solid #ccc;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.about-content .about-quote .quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.about-quote .author {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-content img {
+  width: 100%;
+}
+
+.about-content .working-hours,
+.address-two {
+  margin-top: 15px;
+}
+
+/* End About */
+
+/* Start Menu */
+.menu {
+  padding-top: 60px;
+}
+
+.menu-content {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.menu-content .categories {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-size: 20px;
+}
+
+.menu-content .categories p {
+  margin: 5px 10px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.menu-content .categories .category {
+  text-align: center;
+  width: 50%;
+  margin: 5px 10px;
+}
+
+.menu-content .categories .first-category {
+  background-color: #616161;
+  color: white;
+}
+
+.menu-content .menu-styling {
+  padding: 30px 5px;
+}
+
+.menu-styling .item {
+  padding: 30px 10px;
+  margin: 5px;
+}
+
+.menu-styling .item .item-name {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: 400;
+}
+
+.menu-styling .item .item-price {
+  color: #757575;
+  font-weight: 400;
+}
+
+.menu img {
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+.drink-content {
+  display: none;
+}
+
+/* End Menu */
+
+/* Start Location */
+.location {
+  padding-top: 60px;
+}
+
+.location .description {
+  font-size: 20px;
+  letter-spacing: -0.7px;
+  margin-bottom: 20px;
+}
+
+.location img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.location .review {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.location .review span {
+  color: white;
+  background-color: black;
+  padding: 2px 5px;
+}
+
+/* End Location */
+
+/* Start Reserve */
+.reserve p {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.reserve form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reserve form input {
+  padding: 16px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border: none;
+  padding: 10px 16px;
+  vertical-align: middle;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+form button:hover {
+  color: black;
+  background-color: #d3d3d3;
+}
+
+/* End Reserve */
+
+/* Ensure images don’t overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make text readable on small screens */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Container: adjust on smaller screens */
+.container {
+  width: 100%;
+  max-width: 1170px;
+  /* Keeps layout centered */
+}
+
+/* Mobile First: stack links */
+.header .fixed-list {
+  /* flex-direction: column; */
+  text-align: center;
+}
+
+.header .fixed-list .items {
+  width: 100%;
+}
+
+/* Tablet & Desktop: row menu */
+@media (min-width: 768px) {
+  .header .fixed-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-content .one,
+  .about-content .two {
+    flex: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-content .menu-styling {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu-content .item {
+    flex: 1 1 calc(50% - 20px);
+    /* 2 per row */
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-content .item {
+    flex: 1 1 calc(33.33% - 20px);
+    /* 3 per row */
+  }
+}
+
+.reserve form {
+  display: flex;
+  flex-direction: column;
+}
+
